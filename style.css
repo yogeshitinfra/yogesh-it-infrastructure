@@ -211,23 +211,35 @@ footer p{
 }
 
 /* Mobile */
-@media(max-width:768px){
+@media (max-width:768px){
 
 header .container{
     flex-direction:column;
-}
-
-.logo{
-    margin-bottom:15px;
+    align-items:center;
 }
 
 nav ul{
-    flex-direction:column;
-    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
 }
 
 nav ul li{
-    margin:10px 0;
+    margin:0;
+}
+
+.hero{
+    padding:90px 15px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:18px;
+}
 }
 
 .hero{
