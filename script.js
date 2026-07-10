@@ -1,39 +1,12 @@
-emailjs.init("TlU-DcrSvloKgM97M");
+document.addEventListener("DOMContentLoaded", function () {
 
-const form = document.getElementById("contact-form");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
 
-if (form) {
-    form.addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        emailjs.sendForm(
-            "service_hzmm3sg",
-            "template_tis4anc",
-            this
-        ).then(function() {
-            alert("Message Sent Successfully!");
-            form.reset();
-        }, function(error) {
-            alert("Failed to send message.");
-            console.log(error);
+    if (menuToggle && nav) {
+        menuToggle.addEventListener("click", function () {
+            nav.classList.toggle("active");
         });
-    });
-}
+    }
 
-
-const menuToggle = document.getElementById("menu-toggle");
-const nav = document.querySelector("nav");
-
-if (menuToggle && nav) {
-    menuToggle.addEventListener("click", function () {
-        nav.classList.toggle("active");
-    });
-}
-const menuToggle = document.getElementById("menu-toggle");
-const nav = document.querySelector("nav");
-
-if(menuToggle && nav){
-    menuToggle.addEventListener("click", function(){
-        nav.classList.toggle("active");
-    });
-}
+});
