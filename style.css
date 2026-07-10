@@ -1,3 +1,9 @@
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:white;
+}
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -212,6 +218,14 @@ footer p{
 
 /* Mobile */
 @media (max-width:768px){
+
+.menu-toggle{
+    display:block;
+}
+
+nav{
+    display:none;
+}
 
 header .container{
     flex-direction:column;
