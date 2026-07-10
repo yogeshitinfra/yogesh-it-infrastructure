@@ -1,0 +1,335 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Container */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Header */
+header{
+    background:#0b3d91;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo h2{
+    color:#fff;
+    font-size:28px;
+    font-weight:700;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ff9800;
+}
+
+/* Hero */
+.hero{
+    background:linear-gradient(135deg,#0b3d91,#00a8ff);
+    color:#fff;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    background:#ff9800;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e68900;
+    transform:translateY(-3px);
+}
+
+/* Section */
+section{
+    padding:70px 20px;
+}
+
+section h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:45px;
+}
+
+/* Services */
+.services{
+    background:#eef5ff;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.service-box{
+    background:#fff;
+    padding:35px 25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.service-box:hover{
+    transform:translateY(-8px);
+}
+
+.service-box i{
+    font-size:50px;
+    color:#0b3d91;
+    margin-bottom:20px;
+}
+
+.service-box h3{
+    margin-bottom:15px;
+}
+
+/* Why Us */
+.why-us{
+    background:#f8fbff;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:#fff;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+/* Contact Banner */
+.contact-banner{
+    background:#0b3d91;
+    color:#fff;
+    text-align:center;
+}
+
+.contact-banner h2{
+    color:#fff;
+}
+
+.contact-banner p{
+    font-size:20px;
+    margin:20px 0;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* WhatsApp */
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:34px;
+    box-shadow:0 6px 15px rgba(0,0,0,.3);
+    z-index:999;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+header .container{
+    flex-direction:column;
+}
+
+.logo{
+    margin-bottom:15px;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero{
+    padding:90px 15px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+section h2{
+    font-size:30px;
+}
+
+.btn{
+    padding:13px 28px;
+}
+
+.whatsapp{
+    width:60px;
+    height:60px;
+    font-size:30px;
+}
+
+}
+/* About Section */
+
+.about{
+    padding:70px 8%;
+    background:#ffffff;
+}
+
+.about h2{
+    text-align:center;
+    font-size:36px;
+    color:#0b3d91;
+    margin-bottom:25px;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+}
+/* Contact Page */
+
+.contact-page{
+    padding:80px 8%;
+    text-align:center;
+    background:#f8f9fa;
+}
+
+.contact-page h2{
+    font-size:36px;
+    color:#0b3d91;
+    margin-bottom:25px;
+}
+
+.contact-page p{
+    font-size:20px;
+    margin:15px 0;
+}
+
+.contact-page .btn{
+    margin-top:30px;
+    display:inline-block;
+}
+/* Contact Form */
+.contact-form{
+    max-width:600px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.contact-form button{
+    border:none;
+    cursor:pointer;
+}
+.map{
+    max-width: 900px;
+    margin: 40px auto 0;
+}
+
+.map iframe{
+    width: 100%;
+    border-radius: 10px;
+}
